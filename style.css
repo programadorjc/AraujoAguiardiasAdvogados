@@ -1,0 +1,217 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: rgb(134, 108, 51);
+    padding: 20px;
+}
+
+.navbar a:hover {
+ 
+    color: rgb(73, 12, 12);
+    width: 120px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.navbar a.nav-link {
+    color: white;
+    text-decoration: none;
+    font: bold;
+}
+
+.navbar a.nav-link.active {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+ 
+}
+
+/* Seção de serviços */
+.servicos {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.servicos h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #c26208;
+}
+
+.servicos h2 {
+    font-size: 1.5rem;
+    color: #161616;
+    margin-top: 10px;
+}
+
+.servicos p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #c26208;
+    font-weight: bold;
+}
+
+/* Cards de serviços */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.card-content a {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #04AA6D;
+    border-radius: 10px;
+    box-shadow: 0 4px #999;
+    transition: background-color 0.3s ease;
+}
+
+.card-content a:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+}
+
+/* Botões Home no final */
+.home-end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+}
+
+.home-end h5 a {
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsividade para os cards */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card img {
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p {
+        font-size: 0.8rem;
+    }
+
+    .card-content a {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Rodapé */
+footer {
+    color: #131212;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    background-color: black;
+    color: white;
+ 
+}
+
+/* Estilo do iframe */
+footer iframe {
+    margin: 20px auto;
+    display: block;
+    border: none;
+    width: 100%;
+    height: 300px;
+}
+
+footer iframe {
+    padding: 20px;
+}
+
+/* Redes Sociais no Rodapé */
+footer .redes-sociais ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+footer .redes-sociais ul li {
+    list-style: none;
+}
+
+footer .redes-sociais ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+footer .redes-sociais ul li a:hover {
+    background-color: #555;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    footer .redes-sociais ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
